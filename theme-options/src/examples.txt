@@ -1,0 +1,96 @@
+<?php 
+
+/**
+ * settings_section 'hero'    :[]
+ * settings_section 'services':[]
+ * settings_section 'about_us':[]
+ * settings_section 'news'    :[]
+ * settings_section 'video'   :[]
+ * settings_section 'staff'   :[]
+ * settings_section 'why_us'  :[]
+ * settings_section 'gallery' :[]
+ * settings_section 'supplies':[] 
+ * 
+ */
+
+$prefix = 'theme_opts_section';
+$elements = array();
+
+$sections = [
+    'header' => __('Header', THEME_DOMAIN),
+    'footer' => __('Footer', THEME_DOMAIN)
+];
+$sectionKeys = array_keys($sections);
+/**
+ * FOR ALL SECTIONS
+ */
+$elements['title_all'] = array_map(function($element) use ($prefix) {
+    $field = new FieldGenerator($element,'Title',$prefix);
+    $field->attrs['name'] = 'Title';
+    $field->attrs['label'] = 'Title of '. $element;
+    $field->attrs['desc'] = 'Title of '. $element;
+    $field->attrs['attributes'] = ['required' => 'required'];
+    return $field->defaultField();
+}, $sectionKeys);
+
+$elements['subtitle_all'] = array_map(function($element) use ($prefix) {
+    $field = new FieldGenerator($element,'Subtitle',$prefix);
+    $field->attrs['name'] = 'Subtitle';
+    $field->attrs['label'] = 'Subtitle of '. $element;
+    $field->attrs['desc'] = 'Subtitle of '. $element;
+    return $field->defaultField();
+}, $sectionKeys);
+
+$elements['textarea_all'] = array_map(function($element) use ($prefix) {
+    $field = new FieldGenerator($element,'textarea',$prefix);
+    $field->attrs['name'] = 'textarea';
+    $field->attrs['label'] = 'textarea of '. $element;
+    $field->attrs['desc'] = 'textarea of '. $element;
+    return $field->textField();
+}, $sectionKeys);
+
+$elements['gallery_all'] = array_map(function($element) use ($prefix) {
+    $field = new FieldGenerator($element,'Gallery',$prefix);
+    $field->attrs['name'] = 'Gallery';
+    $field->attrs['label'] = 'Gallery of '. $element;
+    $field->attrs['desc'] = 'Gallery of '. $element;
+    $field->attrs['default'] = '5139,5137,5136';
+    $field->attrs['attributes'] = ['required' => 'required'];
+    return $field->galleryField();
+}, $sectionKeys);
+
+$elements['image_all'] = array_map(function($element) use ($prefix) {
+    $field = new FieldGenerator($element,'Image', $prefix);
+    $field->attrs['name'] = 'Image';
+    $field->attrs['label'] = 'Image of '. $element;
+    $field->attrs['desc'] = 'Image of '. $element;
+    // $field->attrs['default'] = '5136';
+    $field->attrs['attributes'] = ['required' => 'required'];
+    return $field->mediaField();
+}, $sectionKeys);
+
+$elements['radio_all'] = array_map(function($element) use ($prefix) {
+    $field = new FieldGenerator($element,'Radio',$prefix);
+    $field->attrs['name'] = 'Radio';
+    $field->attrs['label'] = 'Radio of '. $element;
+    $field->attrs['desc'] = 'Radio of '. $element;
+    $field->attrs['default'] = 'radio1';
+    $field->attrs['options'] = ['radio1', 'redio2'];
+    $field->attrs['attributes'] = ['required' => 'required'];
+    return $field->radioField();
+}, $sectionKeys);
+
+$elements['button_all'] = array_map(function($element) use ($prefix) {
+    $field = new FieldGenerator($element,'Button',$prefix);
+    $field->attrs['name'] = 'button';
+    $field->attrs['class'] = 'detect';
+    $field->attrs['label'] = 'button of '. $element;
+    $field->attrs['desc'] = 'button of '. $element;
+    $field->attrs['placeholder'] = null;
+    return $field->buttonField();
+}, $sectionKeys);
+
+
+
+
+return ['sections' => $sections, 'elements' => $elements, 'prefix' => $prefix];
