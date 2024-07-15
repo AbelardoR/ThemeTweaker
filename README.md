@@ -7,19 +7,19 @@
 <h1 align="center">ThemeTweaker</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{AbelardoR}}/themetweaker?color=4535C1">
+ <img alt="Github top language" src="https://img.shields.io/github/languages/top/AbelardoR/themetweaker?color=4535C1">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/{{AbelardoR}}/themetweaker?color=4535C1">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/AbelardoR/themetweaker?color=4535C1">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/{{AbelardoR}}/themetweaker?color=4535C1">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/AbelardoR/themetweaker?color=4535C1">
 
-  <img alt="License" src="https://img.shields.io/github/license/{{AbelardoR}}/themetweaker?color=4535C1">
+  <img alt="License" src="https://img.shields.io/github/license/AbelardoR/themetweaker?color=4535C1">
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{AbelardoR}}/themetweaker?color=56BEB8" /> -->
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/AbelardoR/themetweaker?color=56BEB8" /> -->
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{AbelardoR}}/themetweaker?color=56BEB8" /> -->
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/AbelardoR/themetweaker?color=56BEB8" /> -->
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{AbelardoR}}/themetweaker?color=56BEB8" /> -->
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/AbelardoR/themetweaker?color=56BEB8" /> -->
 </p>
 
 Status
@@ -37,7 +37,7 @@ Status
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/{{AbelardoR}}" target="_blank">Author</a>
+  <a href="https://github.com/AbelardoR" target="_blank">Author</a>
 </p>
 
 <br>
@@ -79,7 +79,7 @@ Have a minimum knowledge of PHP and WP theme development.
 
 ```bash
 # Clone this project or download as zip
-git clone https://github.com/{{AbelardoR}}/themetweaker
+git clone https://github.com/AbelardoR/themetweaker
 
 # Place within the theme
 move source_dir_path destination_dir_path
@@ -234,7 +234,7 @@ ThemeTweaker is licensed under the GNU General Public License (GPL).
 ## Contributing ##
 If you'd like to contribute to ThemeTweaker, please fork the repository and submit a pull request.
 
-Made with :heart: by <a href="https://github.com/{{AbelardoR}}" target="_blank">{{Abelardo R.}}</a>
+Made with :heart: by <a href="https://github.com/AbelardoR" target="_blank">{{Abelardo R.}}</a>
 
 &#xa0;
 
