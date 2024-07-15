@@ -4,14 +4,11 @@
 
 <h1 align="center">ThemeTweaker</h1>
 
-<p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/AbelardoR/THEMETWEAKER?color=56BEB8">
-
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/AbelardoR/THEMETWEAKER?color=56BEB8">
-
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/AbelardoR/THEMETWEAKER?color=56BEB8">
-
-  <img alt="License" src="https://img.shields.io/github/license/AbelardoR/THEMETWEAKER?color=56BEB8">
+<p>
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/AbelardoR/ThemeTweaker?color=405D72">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/AbelardoR/ThemeTweaker?color=405D72">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/AbelardoR/ThemeTweaker?color=405D72">
+  <img alt="License" src="https://img.shields.io/github/license/AbelardoR/ThemeTweaker?color=405D72">
 
 </p>
 
