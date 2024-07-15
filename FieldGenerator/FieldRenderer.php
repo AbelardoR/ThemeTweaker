@@ -202,17 +202,18 @@ class FieldRenderer {
     /**
      * The function generates HTML code for a checkbox input element in PHP.
      * 
-     * @return string The `checkbox()` function returns an HTML input element of type checkbox with the
+     * @return string|int The `checkbox()` function returns an HTML input element of type checkbox with the
      * specified attributes and value.
      */
     public function checkbox() {
         $inputHtml = sprintf(
-            '<input name="%1$s" id="%1$s" type="checkbox" value="%2$s" %3$s %4$s>',
+            '<input name="%1$s" id="%1$s" type="hidden" value="0" />
+            <input name="%1$s" id="%1$s" type="checkbox" value="1" %2$s %3$s />',
             $this->field['id'],
-            $this->value,
+            $this->value ? 'checked' : '',
             $this->attributes,
-            $this->value ? 'checked' : ''
         );
+
         return $inputHtml;
     }
 
