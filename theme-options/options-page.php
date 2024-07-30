@@ -54,8 +54,10 @@ class ThemeOptions_Settings_Page {
 		add_action('admin_init', array($this, 'themeopts_setup_sections'));
 		add_action('admin_init', array($this, 'themeopts_setup_fields'));
 		
-		add_action('admin_head', array($this, 'themeopts_page_style'));
-		add_action('admin_footer', array($this, 'themeopts_page_script'));
+		if (isset($_GET['page']) && $_GET['page'] == $this->page_id) {
+			add_action('admin_head', array($this, 'themeopts_page_style'));
+			add_action('admin_footer', array($this, 'themeopts_page_script'));	
+        }
 		
 		add_action('admin_enqueue_scripts', 'wp_enqueue_media');
 	}
@@ -88,7 +90,7 @@ class ThemeOptions_Settings_Page {
 	 */
 	protected function add_page($page_title, $menu_title, $capability, $slug, $callback, $icon, $position=null) {
 		if ($this->page_parent != null) {
-			add_submenu_page($this->page_parent, $page_title, $menu_title, $capability, $slug, $callback, $icon, null);
+			add_submenu_page($this->page_parent, $page_title, $menu_title, $capability, $slug, $callback, $icon, $position);
 		} else {
 			add_menu_page($page_title, $menu_title, $capability, $slug, $callback, $icon, $position);
 		}

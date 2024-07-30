@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function runCompontentTabs() {
     const tabLinks = document.querySelectorAll('.tab-link');
     const tabPanes = document.querySelectorAll('.tab-pane');
-
+    if (tabLinks.length < 1) { return false; }
     let activeTab = get_set_storage() || tabLinks[0].dataset.tab;
 
     tabLinks.forEach(link => {

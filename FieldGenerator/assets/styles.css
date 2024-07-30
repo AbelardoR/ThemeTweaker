@@ -24,6 +24,7 @@ img[src=""] {
 .form-fields.grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px;
 }
 .form-fields.flex {
     display: flex;
@@ -31,7 +32,6 @@ img[src=""] {
     float: left;
     height: auto;
 }
-
 .form-fields > .input-group {
     width: auto;
     height: min-content;
@@ -40,6 +40,7 @@ img[src=""] {
     width: 100%;
     height: auto;
     grid-column: span 2;
+    border: 2px dashed #8080805e;
 }
 .form-fields.grid > .input-group.take-1 {
     grid-column: span 1;
@@ -138,6 +139,7 @@ img[src=""] {
     transition: .4s;
     border: 1px solid;
     border-radius: calc(var(--boder-radius) / 1.5);
+    margin: auto !important;
 }
 .toggle-switch:checked {
     background-color: var(--color-primary, darkgreen) !important;
@@ -259,7 +261,7 @@ legend {
     background-color: white;
     font-weight: bold;
     width: fit-content !important;
-    border-radius: .35rem;
+    border-radius: .375rem;
     padding: 4px 6px;
 }
 

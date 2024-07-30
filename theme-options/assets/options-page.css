@@ -12,7 +12,7 @@
 
     --border-color: #CCCCCC;
     --border-color-dark: #27272A;
-    --boder-radius: 0.35rem;
+    --boder-radius: 0.375rem;
     --boder-size: 0.0625rem;
 
     --shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(0,0,0,.05);
@@ -118,7 +118,7 @@ h1 {
 .tab-header {
     display: flex;
     border: var(--boder-size) solid var(--border-color);
-    border-radius: 0.35rem;
+    border-radius: 0.375rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     padding: 0.25rem 1rem;
@@ -168,7 +168,7 @@ h1 {
     display: block;
     padding: 20px;
     border: var(--boder-size) solid var(--border-color);
-    border-radius: 0.35rem;
+    border-radius: 0.375rem;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-top: none;

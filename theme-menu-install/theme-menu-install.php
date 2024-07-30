@@ -81,7 +81,6 @@ function setup_theme_navigation() {
         $make_menus[] = $social_menu_items;
         $loop = 0;
         foreach ( $locations as $location => $location_name ) {
-            dump($make_menus[$loop]);
             create_nav_menu( $location_name, $make_menus[$loop], $location );
             $loop++;
         }

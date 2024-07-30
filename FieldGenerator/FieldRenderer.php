@@ -207,7 +207,7 @@ class FieldRenderer {
      */
     public function checkbox() {
         $inputHtml = sprintf(
-            '<input name="%1$s" id="%1$s" type="hidden" value="0" />
+            '<input name="%1$s" id="base_%1$s" type="hidden" value="0" />
             <input name="%1$s" id="%1$s" type="checkbox" value="1" %2$s %3$s />',
             $this->field['id'],
             $this->value ? 'checked' : '',
@@ -343,7 +343,7 @@ class FieldRenderer {
             $this->field['id'],
             $this->field['type'],
             $this->field['placeholder'],
-            $this->value,
+            esc_html($this->value),
             $this->attributes,
         );
 

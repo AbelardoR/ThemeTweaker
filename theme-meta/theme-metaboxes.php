@@ -145,7 +145,7 @@ class ThemeReaderMetaBox
 $SettingsPage = new ThemeReaderMetabox(
 	[
 		'id' 	=> 'ThemeReader',
-		'title' => __('Theme Reader', THEME_DOMAIN),
+		'title' => __('ThemeTweaker', THEME_DOMAIN),
 		'nonce' => 'Theme_Reader_Nonce',
 		'post_type' => [
 			'post',
